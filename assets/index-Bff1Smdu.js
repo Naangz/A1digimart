@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&s(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();function d(){return`
+(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))s(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const o of t.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&s(o)}).observe(document,{childList:!0,subtree:!0});function i(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(e){if(e.ep)return;e.ep=!0;const t=i(e);fetch(e.href,t)}})();const d="/A1digimart/assets/landing_pageA12-BeZ7E_wx.png";function c(){return`
     <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm transition-all duration-300">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16 md:h-20">
@@ -77,7 +77,7 @@
     
     <!-- Spacer untuk navbar fixed -->
     <div class="h-16 md:h-20"></div>
-  `}function c(){return`
+  `}function g(){return`
     <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-red-50 via-pink-50 to-white">
       
       <!-- Background Decorative Elements -->
@@ -172,9 +172,9 @@
               <div class="relative mx-auto w-full max-w-md">
                 <div class="relative bg-gradient-to-br from-kos-primary to-pink-600 rounded-[3rem] p-3 shadow-2xl transform hover:scale-105 transition-transform duration-500">
                   <div class="bg-black rounded-[2.5rem] overflow-hidden">
-                    <!-- Real Screenshot dari Assets -->
+                    <!-- Real Screenshot dari Assets - GANTI PATH -->
                     <img 
-                      src="/src/assets/images/landing_pageA12.PNG" 
+                      id="hero-app-image"
                       alt="KOS A1 App Screenshot" 
                       class="w-full h-auto object-cover"
                       loading="lazy"
@@ -208,7 +208,7 @@
         </a>
       </div>
     </section>
-  `}function g(){return`
+  `}function u(){return`
     <section id="features" class="py-20 lg:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -324,7 +324,7 @@
 
       </div>
     </section>
-  `}function u(){return`
+  `}function x(){return`
     <section id="benefits" class="py-20 lg:py-32 bg-gradient-to-br from-gray-50 to-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -485,7 +485,7 @@
 
       </div>
     </section>
-  `}function x(){return`
+  `}function p(){return`
     <section id="target" class="py-20 lg:py-32 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -684,7 +684,7 @@
         </div>
       </div>
     </section>
-  `}function p(){return`
+  `}function m(){return`
     <section id="cta" class="py-20 lg:py-32 bg-gradient-to-br from-kos-primary via-pink-600 to-red-600 relative overflow-hidden">
       
       <!-- Background Decorative Elements -->
@@ -804,7 +804,7 @@
 
       </div>
     </section>
-  `}function m(){return`
+  `}function b(){return`
     <footer class="bg-gray-900 text-gray-300 pt-16 pb-8">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -958,12 +958,12 @@
 
       </div>
     </footer>
-  `}function b(){const r=document.querySelector("#app");r.innerHTML="",r.innerHTML=`
-    ${d()}
+  `}function v(){const r=document.querySelector("#app");r.innerHTML="",r.innerHTML=`
     ${c()}
     ${g()}
     ${u()}
     ${x()}
     ${p()}
     ${m()}
-  `}function v(){const r=document.querySelector("#mobile-menu-btn"),a=document.querySelector("#mobile-menu");r&&a&&r.addEventListener("click",()=>{a.classList.toggle("hidden")}),document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",o=>{o.preventDefault();const n=t.getAttribute("href"),l=document.querySelector(n);l&&(l.scrollIntoView({behavior:"smooth",block:"start"}),a&&a.classList.add("hidden"))})});const s=document.querySelector("#navbar");s&&window.addEventListener("scroll",()=>{window.scrollY>50?s.classList.add("shadow-lg","bg-white"):s.classList.remove("shadow-lg")}),document.querySelectorAll(".cta-button").forEach(t=>{t.addEventListener("click",()=>{console.log("CTA Button clicked:",t.textContent)})})}document.addEventListener("DOMContentLoaded",()=>{b(),v()});
+    ${b()}
+  `;const a=document.querySelector("#hero-app-image");a&&(a.src=d)}function h(){const r=document.querySelector("#mobile-menu-btn"),a=document.querySelector("#mobile-menu");r&&a&&r.addEventListener("click",()=>{a.classList.toggle("hidden")}),document.querySelectorAll('a[href^="#"]').forEach(t=>{t.addEventListener("click",o=>{o.preventDefault();const n=t.getAttribute("href"),l=document.querySelector(n);l&&(l.scrollIntoView({behavior:"smooth",block:"start"}),a&&a.classList.add("hidden"))})});const s=document.querySelector("#navbar");s&&window.addEventListener("scroll",()=>{window.scrollY>50?s.classList.add("shadow-lg","bg-white"):s.classList.remove("shadow-lg")}),document.querySelectorAll(".cta-button").forEach(t=>{t.addEventListener("click",()=>{console.log("CTA Button clicked:",t.textContent)})})}document.addEventListener("DOMContentLoaded",()=>{v(),h()});
