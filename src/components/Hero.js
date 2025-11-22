@@ -94,9 +94,9 @@ export function Hero() {
               <div class="relative mx-auto w-full max-w-md">
                 <div class="relative bg-gradient-to-br from-kos-primary to-pink-600 rounded-[3rem] p-3 shadow-2xl transform hover:scale-105 transition-transform duration-500">
                   <div class="bg-black rounded-[2.5rem] overflow-hidden">
-                    <!-- Real Screenshot dari Assets -->
+                    <!-- Real Screenshot dari Assets - GANTI PATH -->
                     <img 
-                      src="/src/assets/images/landing_pageA12.PNG" 
+                      id="hero-app-image"
                       alt="KOS A1 App Screenshot" 
                       class="w-full h-auto object-cover"
                       loading="lazy"

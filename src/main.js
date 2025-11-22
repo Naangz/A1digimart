@@ -1,4 +1,5 @@
 import './style.css'
+import appScreenshot from './assets/images/landing_pageA12.PNG'
 
 // Import semua komponen
 import { Navbar } from './components/Navbar.js'
@@ -6,7 +7,6 @@ import { Hero } from './components/Hero.js'
 import { Features } from './components/Features.js'
 import { Benefits } from './components/Benefits.js'
 import { Target } from './components/Target.js'
-//import { Pricing } from './components/Pricing.js'
 import { CTA } from './components/CTA.js'
 import { Footer } from './components/Footer.js'
 
@@ -27,6 +27,12 @@ function renderApp() {
     ${CTA()}
     ${Footer()}
   `
+  
+  // Set image source setelah render
+  const heroImage = document.querySelector('#hero-app-image')
+  if (heroImage) {
+    heroImage.src = appScreenshot
+  }
 }
 
 // Setup event listeners setelah DOM loaded
@@ -80,7 +86,6 @@ function setupEventListeners() {
   ctaButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       console.log('CTA Button clicked:', btn.textContent)
-      // Di sini bisa ditambahkan analytics tracking
     })
   })
 }
